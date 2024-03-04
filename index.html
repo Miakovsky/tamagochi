@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friend Keeper: revolutionary tamagochi game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="game.js"></script>
+    <div class="main">
+        <div class="info">
+            <h1 id="state-info">
+                Take care of your friend! or else
+            </h1>
+            <h2 id="ending">
+                
+            </h2>
+        </div>
+        <div class="game">
+            <div class="needs">
+                <div class="hungry">
+                    <img class="icon" src="img/icon_hungry.png" alt="hungry">
+                    <div id="hungry-bar"></div>
+                </div>
+                <div class="tired">
+                    <img class="icon" src="img/icon_tired.png" alt="tired">
+                    <div id="tired-bar"></div>
+                </div>
+                <div class="dirty">
+                    <img class="icon" src="img/icon_dirty.png" alt="dirty">
+                    <div id="dirty-bar"></div>
+                </div>
+                <div class="bored">
+                    <img class="icon" src="img/icon_bored.png" alt="bored">
+                    <div id="bored-bar"></div>
+                </div>
+            </div>
+            <div class="friend">                
+                <div class="friend-body">
+                    <img src="img/friend_body.png" alt="body">
+                </div>
+                <div class="friend-head">
+                    <img src="img/friend_head.png" alt="head">
+                </div>
+                <div class="friend-head">
+                    <img id="friend-face" src="img/friend_face.png" alt="face">
+                </div>
+                <div class="friend-head">
+                    <img id="friend-outfit" src="">
+                </div>
+                <img id="special-effects" src="">
+            </div>
+            <div class="interact">
+                <button  class="feed" onclick="feedInteraction()">feed</button>
+                <button class="put-to-bed" onclick="putToBedInteraction()">put to bed</button>
+                <button class="give-bath" onclick="giveBathInteraction()">give bath</button>
+                 <button class="pet" onclick="petInteraction()">pet</button>
+            </div>
+        </div>
+        <div class="clothes">
+            <button class="none" onclick="putOnClothes('none')">
+            </button>
+            <button class="hat" onclick="putOnClothes('hat')">
+                <img src="img/clothes_hat.png" alt="hat">
+            </button>
+            <button class="bow" onclick="putOnClothes('bow')">
+                <img src="img/clothes_bow.png" alt="bow">
+            </button>
+            <button class="scarf" onclick="putOnClothes('scarf')">
+                 <img src="img/clothes_scarf.png" alt="scarf">
+            </button>
+            <button class="glasses" onclick="putOnClothes('glasses')">
+                <img src="img/clothes_glasses.png" alt="glasses">
+            </button>
+        </div>
+        <footer>
+            <p>Created by Rigel Miakovskykh</p>
+        </footer>
+    </div>
+
+    
+</body>
+</html>
